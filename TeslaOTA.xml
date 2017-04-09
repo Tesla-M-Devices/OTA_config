@@ -8,9 +8,9 @@
                 title="Rom"
                 description="Download Tesla build">https://www.androidfilehost.com/?fid=673368273298943698</RomUrl>
             <ChangelogUrl
-                id="changelog"
+                id="changelog
                 title="Changelog"
-                description="View Tesla changelogs">https://forum.xda-developers.com/showpost.php?p=70770832&postcount=3</ChangelogUrl>
+                description="View Tesla changelogs">https://forum.xda-developers.com/showpost.php?p=70770832&amp;postcount=3</ChangelogUrl>
             <GappsUrl
                 id="gapps"
                 title="Gapps"
