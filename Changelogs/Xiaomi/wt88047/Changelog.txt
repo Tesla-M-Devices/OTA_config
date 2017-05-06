@@ -1,9 +1,77 @@
 ====================
+     05-06-2017
+====================
+
+
+   * external/DUtils/
+febfd7f Killapp action: restore home screen before killing the app
+
+   * frameworks/base/
+686593d tethering
+cb9a9af Fix java crash under DhcpClient.java
+
+   * packages/apps/DUI/
+ee6c9cb Fix Fling swipe up gesture being hard to trigger
+
+   * packages/apps/Settings/
+bdbfe5c PowerUsageFeatureProviderImpl: little cleanup
+
+   * packages/apps/SlimRecents/
+7180914 Show PlayStore option also for system gapps and manually installed apk
+
+   * packages/apps/TeslaCoil/
+7274993 Expose Tab text and background color for themes
+
+   * vendor/tesla/
+23bd604 Update Nova 5.1
+
+====================
+     05-05-2017
+====================
+
+   * OTA_config/
+5c2e333 Flounder 05/04
+
+====================
+     05-04-2017
+====================
+
+   * OTA_config/
+0aa88c5 onyx (05/03)
+
+   * vendor/tesla/
+479c62e Rename BoardConfigCM.mk to BoardConfigTESLA.mk
+842a892 4.1 no alpha
+
+====================
      05-03-2017
 ====================
 
    * OTA_config/
+c1f42f3 ota: Redmi2 0503
 184561e ota: bacon 0503
+
+   * device/wingtech/wt88047/
+ba9974e wt88047: charger: Switch to CM charger libhealthd
+
+   * packages/apps/Settings/
+892211b Port "Battery Usage Alerts" feature from factory images to aosp
+
+   * system/core/
+0f3c9cb Lockscreen charging info: real time values [2/4]
+c0f0d9b healthd: dock battery
+6d35849 healthd: Detect power supply type for all charger devices
+457b5bf Revert "healthd: dock battery"
+45adf02 Revert "Lockscreen charging info: real time values [2/4]"
+
+   * vendor/tesla/
+16405c4 Introduce the 'Turbo' apk
+
+====================
+     05-02-2017
+====================
+
+   * OTA_config/
 007f53d Update lux, shieldtablet & hammerhead 02/05
 
    * build/
@@ -18,9 +86,6 @@ aa89ee1 Update Security String to 2017-05-05 on nyc-dev
 3308286 N2G47H
 c53de49 N2G47G
 bc3f3fd N2G47F
-
-   * device/wingtech/wt88047/
-ba9974e wt88047: charger: Switch to CM charger libhealthd
 
    * frameworks/av/
 7d6b5b2 Add bounds check in SoftAACEncoder2::onQueueFilled()
@@ -52,37 +117,12 @@ d3c37c5 Query geo description in worker thread to prevent ANR
    * manifest/
 566f6ab 7.1.2_r8
 
-   * packages/apps/Settings/
-892211b Port "Battery Usage Alerts" feature from factory images to aosp
+   * system/bt/
+01c8891 resolve merge conflicts of a3ee2e35 to nyc-dev
 
    * system/core/
 bca325a libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]
 e1d57e4 init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]
-
-   * vendor/tesla/
-16405c4 Introduce the 'Turbo' apk
-
-====================
-     05-02-2017
-====================
-
-   * OTA_config/
-6cb1a18 Flo 05/01
-
-   * frameworks/base/
-f128840 Screen pinning improvements
-76afb80 Reboot/Recovery QS Tile: Use vectorized icons
-1816ff9 Remove force weather update bits
-
-   * hardware/libhardware_legacy/
-34e331e wifi: add firmware loader support for the non-LKM case
-4c4410d wifi: Change USES_TI_MAC80211 to a BoardConfig flag
-8c738d0 wifi: Import CID_PATH from samsung_macloader.h
-644cb5c Nan: Changes to compile hal with Sigma_dut
-baf8c81 insmod: Add support for kernels that don't have finit_module
-
-   * system/bt/
-01c8891 resolve merge conflicts of a3ee2e35 to nyc-dev
 
    * vendor/tesla/
 5720c58 charger: updates for 7.1.2 minui
@@ -92,47 +132,4 @@ d4cf659 cm: charger: Fix cm healthd
 99c465c cm: charger: Export the RTC Clock and Alarm timestamps
 43ea89c cm: charger: Add support for double backlight displays
 3c5d945 cm: Add custom off-mode charging screen
-
-====================
-     05-01-2017
-====================
-
-   * OTA_config/
-a780e22 Clark 04/30
-
-   * packages/apps/MusicFX/
-e3e44ee Better layout for the Reverb spinner
-bfd00fd Theming: Center Visualizer view
-c372cb0 Theming: add missing reverb effects list background color
-
-   * packages/apps/SlimRecents/
-92f5ed8 New app-pinning icon
-
-   * vendor/tesla/
-a6f6580 addison plz
-
-====================
-     04-30-2017
-====================
-
-
-   * vendor/codeaurora/telephony/
-a57c572 IMS-VT: Send static image in a Video Call
-
-====================
-     04-29-2017
-====================
-
-
-   * build/
-600e5be releasetools:tesla
-
-   * frameworks/av/
-b3ca9d6 Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."
-
-   * vendor/codeaurora/telephony/
-0e94dd0 Merge remote-tracking branch 'los/cm-14.1' into HEAD
-
-   * vendor/qcom/opensource/dataservices/
-d736d3a dataservices: Don't pollute the tree
 
