@@ -1,176 +1,64 @@
 ====================
-     05-02-2017
+     05-15-2017
 ====================
 
 
-   * build/
-c85dada N2G47O
-0e45b16 N2G47N
-85af73a N2G47M
-3287b40 N2G47L
-ab8856f N2G47K
-aa89ee1 Update Security String to 2017-05-05 on nyc-dev
-31c43ff Update Security String to 2017-05-01 on nyc-dev
-5c82fcb N2G47I
-3308286 N2G47H
-c53de49 N2G47G
-bc3f3fd N2G47F
-
-   * frameworks/av/
-7d6b5b2 Add bounds check in SoftAACEncoder2::onQueueFilled()
-5d06e08 Fix NPDs in h263 decoder
-0bc4bf7 Fix out of bounds access
-a0855da Fix integer overflow and divide-by-zero
-de3a80e Validate lengths in HEVC metadata parsing
-175421a AudioFlinger: Check framecount overflow when creating track
-
-   * frameworks/base/
-5662f06 Remove bg_non_interactive cgroup [ DO NOT MERGE ]
-57f1250 [DO NOT MERGE] Don't allow permission change to runtime
-bcb3a45 [DO NOT MERGE] Throw exception if slot has invalid offset
-a1468dc [DO NOT MERGE] Check bounds in offsetToPtr
-906b5a6 Fix issue with saving admins before finishing loading.
-1f1522a resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release
-d5c9d27 Protect Bluetooth OPP ACCEPT and DECLINE broadcast
-73875e3 fix anr when concurrent request provider
-ba8bd7a Ensure that the decor view is attached to window.
-d3c37c5 Query geo description in worker thread to prevent ANR
-3bc0c05 fix foreground process will be mistakenly killed when it uses content provider.
-4541921 Fix PacketKeepalive.stop() crash
-18272cc Restart persistent process if start timeout.
-311d17f fix system_server crash issue caused by fd leak.
-f128840 Screen pinning improvements
-76afb80 Reboot/Recovery QS Tile: Use vectorized icons
-1816ff9 Remove force weather update bits
-
-   * frameworks/native/
-1afcb5c binder: remove cgroup interactions [ DO NOT MERGE ]
-
-   * manifest/
-566f6ab 7.1.2_r8
-
-   * system/bt/
-01c8891 resolve merge conflicts of a3ee2e35 to nyc-dev
-
-   * system/core/
-bca325a libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]
-e1d57e4 init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]
-
-   * vendor/motorola/
-43d0c43 shamu: update blobs from N6F27C factory image
-
-   * vendor/tesla/
-5720c58 charger: updates for 7.1.2 minui
-015dc2b cm: charger: Correct res_create_multi_display_surface() usage
-6b76ae7 cm: charger: Center capacity and vertical offset
-d4cf659 cm: charger: Fix cm healthd
-99c465c cm: charger: Export the RTC Clock and Alarm timestamps
-43ea89c cm: charger: Add support for double backlight displays
-3c5d945 cm: Add custom off-mode charging screen
-
 ====================
-     05-01-2017
+     05-14-2017
 ====================
 
    * OTA_config/
-6cb1a18 Flo 05/01
-a780e22 Clark 04/30
+a9e3360 ota: Redmi2 and OnePlus One 05/14
 
-   * hardware/libhardware_legacy/
-34e331e wifi: add firmware loader support for the non-LKM case
-4c4410d wifi: Change USES_TI_MAC80211 to a BoardConfig flag
-8c738d0 wifi: Import CID_PATH from samsung_macloader.h
-644cb5c Nan: Changes to compile hal with Sigma_dut
-baf8c81 insmod: Add support for kernels that don't have finit_module
+   * frameworks/base/
+e00dc8e camera: Make secondary camera package list opt out
+3dbebec Camera: Expose dual camera for whitelist app
 
-   * packages/apps/MusicFX/
-e3e44ee Better layout for the Reverb spinner
-bfd00fd Theming: Center Visualizer view
-c372cb0 Theming: add missing reverb effects list background color
+   * packages/apps/Settings/
+7f0cc9e Remove duplicate options in accessibility settings
+a301967 AnimationScalePreference: better max/default/digits values
+f881d6f Settings: Use seekbar to allow setting arbitrary animation values
 
-   * packages/apps/SlimRecents/
-92f5ed8 New app-pinning icon
+   * packages/apps/Snap/
+0d4be88 Snap: Fix crash switching from back to front cam in video mode
 
-   * vendor/tesla/
-a6f6580 addison plz
+   * packages/services/OmniJaws/
+a05ce42 OmniJaws: fix OWM metric wind speed units
 
 ====================
-     04-30-2017
+     05-13-2017
 ====================
 
+   * OTA_config/
+e1616a7 Flo 05/12
 
 ====================
-     04-29-2017
+     05-12-2017
 ====================
 
-
-   * build/
-600e5be releasetools:tesla
-
-   * device/nvidia/shieldtablet/
-b430e48 Build lmkd
-6d6e10b shieldtablet: Enable dex-preoptimization
-1301f64 Update deps
-
-   * frameworks/av/
-b3ca9d6 Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."
-
-   * packages/resources/devicesettings/
-55faa1d Automatic translation import
-
-   * vendor/codeaurora/telephony/
-a57c572 IMS-VT: Send static image in a Video Call
-0e94dd0 Merge remote-tracking branch 'los/cm-14.1' into HEAD
-
-   * vendor/qcom/opensource/dataservices/
-d736d3a dataservices: Don't pollute the tree
+   * OTA_config/
+fdd6fd8 Bullhead 05/11
 
 ====================
-     04-28-2017
+     05-11-2017
 ====================
 
 
    * frameworks/base/
-3c413ae Solid battery: Bring back pulsing animation
-f415773 PA solid circle battery style [1/2]
-1ae71dc Fix DUI slippery flag logic and IllegalArgumentException [2/2]
+110c199 StatusBar: Catch OOM caused by third-party icons
+139561c The network event should be an asynchronous callback.
+dafbc5a wifi: catch UnsupportedOperationException for getMatchingWifiConfig
+b69988a SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
+9de0867 Destroy Allocation right away on exception
+426896b Destroy Allocation with ScriptIntrinsicLut
+2d4f001 Aapt2: Fix png leak
+bef229a Allow to disable qs footer warnings [1/2]
+4c075b3 Battery icon: make it more theme friendly [1/2]
 
-   * packages/apps/DUI/
-a7b53c9 Fix DUI slippery flag logic and IllegalArgumentException [1/2]
-aeef534 DUI mediamonitor: exclude Chrome from isPlaying check
-f8104e7 DUI mediamonitor: exclude youtube from isPlaying check
-7bddc73 Improve Pulse and MediaMonitor reliability
-
-   * packages/apps/MusicFX/
-5a51817 Make MusicFX fully themeable
-6307dc9 Build as PRIVILEGED
-66bea5e Fix UI behavior for virtualizer effect
-4fa092e MusicFX: Expose icon color
-1eecbdb MusicFX: Adjust colors
-b171e51 Moar stock colors
-970b9ed Modify Hungarian translation
-e3d942b Remove extra quotation mark
-a5c581f Toast string change
-96ac148 Update theme / targetSdkVersion
-fab7848 Materialized icon for MusicFX
-51aa246 MusicFX: be nice to themers
-d20d0b5 MusicFX: cleanup unneeded
-0262774 MusicFX: add disable system property
-dd74c96 MusicFX: output type specific settings
-d785b64 MusicFX: use correct preset for equalizer
-f0051b8 MusicFX: set proper SDK version
-59cfcdd MusicFX: fix enablement of virtualizer knob
-85a4791 MusicFX: apply effects only if needed
-53f31d9 MusicFX: cleanup and bugfixes
-97e2389 MusicFX: omnification
-1e856af MusicFX: use fallback for calling package
+   * packages/apps/Settings/
+ed6ca5a DisplaySettings: font size in 5% steps from 80% to 130%
 
    * packages/apps/TeslaCoil/
-9fe1fc1 PA solid circle battery style [2/2]
-
-   * packages/apps/ThemeInterfacer/
-40e3809 JobService: Expose configuration shim refresh delay
-
-   * vendor/tesla/
-ed46b53 Update Magisk Manager 4.3.3
+f8f7006 Allow to disable qs footer warnings [2/2]
+821513d Battery icon: make it more theme friendly [2/2]
 
