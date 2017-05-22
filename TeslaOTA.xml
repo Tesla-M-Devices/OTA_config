@@ -70,7 +70,7 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </OnePlus3>
         <lux>
-            <Filename>Tesla-lux-7.1.2.RC.v4.1-Official-20170515-1153.zip</Filename>
+            <Filename>Tesla-lux-7.1.2.RC.v4.1-Official-20170522-1140.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
@@ -85,11 +85,11 @@
                 description="Download latest Banks gapps">https://download.dirtyunicorns.com/gapps/Banks</GappsUrl>
         </lux>
         <shieldtablet>
-            <Filename>Tesla-shieldtablet-7.1.2.RC.v4.1-Official-20170515-1232.zip</Filename>
+            <Filename>Tesla-shieldtablet-7.1.2.RC.v4.1-Official-20170522-1234.zip</Filename>
             <RomUrl
                 id="rom"
                 title="Rom"
-                description="Download TeslaN build">https://www.androidfilehost.com/?fid=817550096634769449</RomUrl>
+                description="Download TeslaN build">https://www.androidfilehost.com/?fid=529152257862728535</RomUrl>
             <ChangelogUrl
                 id="changelog"
                 title="Changelog"
