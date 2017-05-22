@@ -1,90 +1,84 @@
 ====================
-     05-14-2017
+     05-22-2017
 ====================
 
 
    * frameworks/base/
-e00dc8e camera: Make secondary camera package list opt out
-3dbebec Camera: Expose dual camera for whitelist app
-
-   * packages/apps/Snap/
-0d4be88 Snap: Fix crash switching from back to front cam in video mode
-
-====================
-     05-13-2017
-====================
-
-   * OTA_config/
-e1616a7 Flo 05/12
-
-====================
-     05-12-2017
-====================
-
-   * OTA_config/
-fdd6fd8 Bullhead 05/11
-
-====================
-     05-11-2017
-====================
-
-
-   * frameworks/base/
-110c199 StatusBar: Catch OOM caused by third-party icons
-139561c The network event should be an asynchronous callback.
-dafbc5a wifi: catch UnsupportedOperationException for getMatchingWifiConfig
-b69988a SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
-9de0867 Destroy Allocation right away on exception
-426896b Destroy Allocation with ScriptIntrinsicLut
-2d4f001 Aapt2: Fix png leak
-bef229a Allow to disable qs footer warnings [1/2]
-4c075b3 Battery icon: make it more theme friendly [1/2]
-
-   * packages/apps/Settings/
-ed6ca5a DisplaySettings: font size in 5% steps from 80% to 130%
+1f09f52 [1/2] base: featureize ro.recents.grid
+ce63ef1 Add hook to handle multi window dock events better
+94cc5a1 Add OmniSwitch toggle to protected broadcasts
 
    * packages/apps/TeslaCoil/
-f8f7006 Allow to disable qs footer warnings [2/2]
-821513d Battery icon: make it more theme friendly [2/2]
+201311d Add settings switch for stock/grid recents style
+27c403e Fix expandable desktop
+87002c2 Make sure to rebuild on app entries loaded
+5dd0b81 Don't re-populate the app list in rebuild()
 
 ====================
-     05-10-2017
+     05-21-2017
+====================
+
+
+   * frameworks/base/
+f696225 Fix permissions for CTS [1/2]
+268eb56 Unfuck QS tile fail
+1efc7f8 bt manager: add missing mHandler
+
+   * packages/apps/ThemeInterfacer/
+5aeba49 Add interface to get API version and app authentication status
+069e629 Fix permissions for CTS [2/2]
+
+====================
+     05-20-2017
+====================
+
+
+====================
+     05-19-2017
+====================
+
+
+   * frameworks/base/
+8fde5c8 Fix screenpinning from showing up unless enabled
+51c8664 Launch music player on headset connect: add BT compatibility [1/2]
+4202f4a AudioService: Prevent crash when there is no music app
+8244b63 AudioService: don't launch music player while in call
+142146a Do not start music app when headset is unplugged
+fdcbd64 AudioService: launch default music player on headset connect [1/2]
+838bce0 Navigation disabled notification: fix logic [1/2]
+30f45a9 Add navigation disabled notification [1/2]
+ef45ad8 Big battery circle: fix custom themes compatibility
+c6558ca Fix WiFi QS in the off state while entering the detail view
+a1d2e6e Battery icon: charge level color must respect darkintensity
+76e9892 OMS: StrictMode and files under /data/system/theme/
+
+   * packages/apps/TeslaCoil/
+23ad552 Launch music player on headset connect: add BT compatibility [2/2]
+faafddc Settings: launch default music player on headset connect [2/2]... Tesla Edit: make a headset category
+254c32e Navigation disabled notification: fix logic [2/2]
+35f704c Add navigation disabled notification [2/2]
+
+   * vendor/tesla/
+460ac04 Enable Night Display globally
+
+====================
+     05-18-2017
 ====================
 
    * OTA_config/
-e698e51 Clark 05/09
+8d2c233 onyx (05/17)
+
+   * art/
+e9b2730 runtime: arch: support kryo for 32 bit
+
+   * bionic/
+11edc0d libc: ARM: Add 32-bit Kryo memcpy
+31d0866 libc: use Cortex-A7/A53 memset on Kryo
+e186fa4 Add kryo support.
 
    * frameworks/base/
-cbdca7e Set network traffic meter font to sans serif condensed
-7d5df13 NetworkTraffic: Hide when not connected to network
-ff6f1f6 base: SystemUI: add dedicated TextView for OmniJaws error marker
-4a12c1d base: SystemUI: dont show OmniJaws error that prominent
-c1eccf0 base: SystemUI: dont hide weather forecast data on errors
-1049ac6 base: SystemUI: use new OmniJaws error broadcasts
+18a9b49 Update caffeine qs tile New behaviour :
 
-   * packages/apps/Settings/
-e05b711 AppOpsDetails: Check app permissions safely
-
-   * packages/apps/Snap/
-e354b9c Fix some inconsistencies of the HDR button
-4870eb6 CameraControls: Toggle the status of disabled views
-d825f7c Never remove unsupported controls
-92def9b WideAnglePanoramaUI: Correctly position the progressbar
-
-   * packages/services/OmniJaws/
-d9e6b5d Fix potential actionbar npe
-2a73c1f OmniJaws: widget layout madness
-10caf07 OmniJaws: dont show OmniJaws error that prominent
-b8ec6d3 OmniJaws: come here all you hidden bugs into the bright light
-d21fa89 OmniJaws: weather widget fixes
-b762d11 OmniJaws: add error broadcast
-7bb5450 OmniJaws: add weather widget
-abf8520 OmniJaws: remove separation between force and not force update
-129fd14 OmniJaws: add fetch weather data retry loop
-
-   * system/sepolicy/
-e414931 sepolicy: Allow system_server to set theme_prop
-
-   * vendor/tesla/
-85a730f Update Nova 5.1.1
+   * frameworks/native/
+6ceaf72 native: add phone-xxhdpi-4096-dalvik-heap property config
 
